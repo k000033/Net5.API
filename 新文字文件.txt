@@ -1,0 +1,34 @@
+1.那首先要使用Database First，需要先安裝以下二個套件：
+
+  Microsoft.EntityFrameworkCore.SqlServer
+  Microsoft.EntityFrameworkCore.Tools
+
+2. 到套件管理器主控台(檢視>其他視窗>套件管理器主控台)下以下指令
+   Scaffold-DbContext "Server=伺服器位置;Database=資料庫;Trusted_Connection=True;User ID=帳號;Password=密碼" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force
+   * 伺服器位置：打上你的ip位置。
+   * 資料庫：你的資料庫名稱。
+   * 帳號：就帳號。
+   * 密碼：就密碼。
+
+   -OutputDir Models指說要將相關檔案產生在這個資料夾底下，
+   -Force則是如果此位置已有相同檔案時覆蓋，就算沒檔案也可以多這個參數。
+   Integrated Security=True window 驗證，如果 要帳密輸入，就要拿掉。
+
+3.在產生出的這個檔TodoContext.cs會出現一個警告，刪掉
+
+4.將原本寫在TodoContext.cs的連線字串移到appsettings.json中
+  "ConnectionStrings": {
+    "TodoDatabase": "Server=伺服器位置;Database=資料庫;Trusted_Connection=True;User ID=帳號;Password=密碼"
+    }
+
+5.然後我們在Startup.cs中加入資料庫物件的DI注入。
+  public void ConfigureServices(IServiceCollection services)
+  {
+    services.AddControllers();
+    services.AddDbContext<TodoContext>(options =>
+    options.UseSqlServer(Configuration.GetConnectionString("TodoDatabase")));
+   
+  }
+
+6那日後如果在SQL Server上有資料表行進新增或更新時，只要在重下一次Scaffold-DbContext指令即可。
+ 那其中要特別注意的是，在下Scaffold-DbContext指令時，程式不能存有任何編譯上的錯誤，否則將會失敗，如圖。
