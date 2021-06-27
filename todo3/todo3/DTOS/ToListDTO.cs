@@ -7,7 +7,7 @@ namespace todo3.DTOS
 {
     public class ToListDTO
     {
-  
+        public Guid TodoId { get; set; }
         public string Name { get; set; }
         public DateTime InsertTime { get; set; }
         public DateTime UpdateTime { get; set; }
