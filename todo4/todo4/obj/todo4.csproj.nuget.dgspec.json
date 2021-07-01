@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\k000033\\source\\repos\\todo4\\todo4\\todo4.csproj": {}
+    "C:\\Users\\k000033\\Desktop\\net.core5_api\\todo4\\todo4\\todo4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\k000033\\source\\repos\\todo4\\todo4\\todo4.csproj": {
+    "C:\\Users\\k000033\\Desktop\\net.core5_api\\todo4\\todo4\\todo4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\k000033\\source\\repos\\todo4\\todo4\\todo4.csproj",
+        "projectUniqueName": "C:\\Users\\k000033\\Desktop\\net.core5_api\\todo4\\todo4\\todo4.csproj",
         "projectName": "todo4",
-        "projectPath": "C:\\Users\\k000033\\source\\repos\\todo4\\todo4\\todo4.csproj",
+        "projectPath": "C:\\Users\\k000033\\Desktop\\net.core5_api\\todo4\\todo4\\todo4.csproj",
         "packagesPath": "C:\\Users\\k000033\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\k000033\\source\\repos\\todo4\\todo4\\obj\\",
+        "outputPath": "C:\\Users\\k000033\\Desktop\\net.core5_api\\todo4\\todo4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
