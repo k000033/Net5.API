@@ -1,4 +1,4 @@
-1.那首先要使用Database First，需要先安裝以下二個套件：
+﻿1.那首先要使用Database First，需要先安裝以下二個套件：
 
   Microsoft.EntityFrameworkCore.SqlServer
   Microsoft.EntityFrameworkCore.Tools
@@ -32,3 +32,22 @@
 
 6那日後如果在SQL Server上有資料表行進新增或更新時，只要在重下一次Scaffold-DbContext指令即可。
  那其中要特別注意的是，在下Scaffold-DbContext指令時，程式不能存有任何編譯上的錯誤，否則將會失敗，如圖。
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+用 SqlConnection 連線
+
+1.再 appsettings 新增 ConnectionStrings
+
+  "ConnectionStrings": {
+    "dcs": "Server=192.168.100.134;Database=DCS;User ID=ncf;Password=ksi"
+  }
+
+2.再 Control 引用
+
+ private readonly IConfiguration m_config;
+        public dcsController(IConfiguration configuration)
+        {
+            m_config = configuration;
+        }
