@@ -47,7 +47,7 @@
 2.再 Control 引用
 
  private readonly IConfiguration m_config;
-        public dcsController(IConfiguration configuration)
-        {
+ public dcsController(IConfiguration configuration)
+ {
             m_config = configuration;
-        }
+ }
