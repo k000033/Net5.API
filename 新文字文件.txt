@@ -52,5 +52,18 @@
             m_config = configuration;
  }
 
-3.在 GET 裡引用
-  string ConnectionString = _configuration.GetConnectionString("TodoDatabase");
+3.取得字串 
+ string ConnectionString = _configuration.GetConnectionString("TodoDatabase");
+
+
+
+------------------------------------------------------------------------------------------------------
+issue
+
+1.DataTable它們不是像 JSON 這樣的可序列化對象，而是DataTables使用 DTO 來存儲您的信息。
+錯誤訊息 
+
+Q Serialization and deserialization of 'System.Type' instances are not supported and should be avoided since they can lead to security issues.
+
+A 轉成DTO 在序列化
+
