@@ -51,3 +51,6 @@
  {
             m_config = configuration;
  }
+
+3.在 GET 裡引用
+  string ConnectionString = _configuration.GetConnectionString("TodoDatabase");
