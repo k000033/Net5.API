@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using todo4.Models;
+using todo4.services;
 
 namespace todo4
 {
@@ -31,6 +32,8 @@ namespace todo4
             services.AddControllers();
             services.AddDbContext<todoContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("TodoDatabase")));
+            services.AddScoped<todoLostService>();
+            services.AddScoped<todoService2>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

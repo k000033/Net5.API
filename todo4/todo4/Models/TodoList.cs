@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -13,6 +14,7 @@ namespace todo4.Models
         }
 
         public Guid TodoId { get; set; }
+
         public string Name { get; set; }
         public DateTime InsertTime { get; set; }
         public DateTime UpdateTime { get; set; }

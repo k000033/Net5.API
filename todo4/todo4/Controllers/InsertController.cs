@@ -178,9 +178,19 @@ namespace todo4.Controllers
         //}
 
         // PUT api/<InsertController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut]
+        public ActionResult Put([FromBody] UpdateDTO value)
         {
+            var result = _todoContext.TodoLists.Where(x => x.TodoId == value.TodoId).Select(x => x).SingleOrDefault();
+
+            result.InsertTime = value.InsertTime;
+            result.UpdateTime = value.UpdateTime;
+
+            _todoContext.TodoLists.Update(result).CurrentValues.SetValues(value);
+            _todoContext.SaveChanges();
+
+            return CreatedAtAction(nameof(Get), new { id = value.TodoId }, value);
+
         }
 
         // DELETE api/<InsertController>/5
