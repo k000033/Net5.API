@@ -1,0 +1,15 @@
+C:\Users\UncleCarter\source\repos\PX_WEL_BackEnd_Demo\PX_WEL_BE_Lib\bin\Debug\net5.0\PX_WEL_BE_Lib.deps.json
+C:\Users\UncleCarter\source\repos\PX_WEL_BackEnd_Demo\PX_WEL_BE_Lib\bin\Debug\net5.0\PX_WEL_BE_Lib.dll
+C:\Users\UncleCarter\source\repos\PX_WEL_BackEnd_Demo\PX_WEL_BE_Lib\bin\Debug\net5.0\ref\PX_WEL_BE_Lib.dll
+C:\Users\UncleCarter\source\repos\PX_WEL_BackEnd_Demo\PX_WEL_BE_Lib\bin\Debug\net5.0\PX_WEL_BE_Lib.pdb
+C:\Users\UncleCarter\source\repos\PX_WEL_BackEnd_Demo\PX_WEL_BE_Lib\bin\Debug\net5.0\PX_WEL_BE_Model.dll
+C:\Users\UncleCarter\source\repos\PX_WEL_BackEnd_Demo\PX_WEL_BE_Lib\bin\Debug\net5.0\PX_WEL_BE_Model.pdb
+C:\Users\UncleCarter\source\repos\PX_WEL_BackEnd_Demo\PX_WEL_BE_Lib\obj\Debug\net5.0\PX_WEL_BE_Lib.csprojAssemblyReference.cache
+C:\Users\UncleCarter\source\repos\PX_WEL_BackEnd_Demo\PX_WEL_BE_Lib\obj\Debug\net5.0\PX_WEL_BE_Lib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\UncleCarter\source\repos\PX_WEL_BackEnd_Demo\PX_WEL_BE_Lib\obj\Debug\net5.0\PX_WEL_BE_Lib.AssemblyInfoInputs.cache
+C:\Users\UncleCarter\source\repos\PX_WEL_BackEnd_Demo\PX_WEL_BE_Lib\obj\Debug\net5.0\PX_WEL_BE_Lib.AssemblyInfo.cs
+C:\Users\UncleCarter\source\repos\PX_WEL_BackEnd_Demo\PX_WEL_BE_Lib\obj\Debug\net5.0\PX_WEL_BE_Lib.csproj.CoreCompileInputs.cache
+C:\Users\UncleCarter\source\repos\PX_WEL_BackEnd_Demo\PX_WEL_BE_Lib\obj\Debug\net5.0\PX_WEL_BE_Lib.csproj.CopyComplete
+C:\Users\UncleCarter\source\repos\PX_WEL_BackEnd_Demo\PX_WEL_BE_Lib\obj\Debug\net5.0\PX_WEL_BE_Lib.dll
+C:\Users\UncleCarter\source\repos\PX_WEL_BackEnd_Demo\PX_WEL_BE_Lib\obj\Debug\net5.0\ref\PX_WEL_BE_Lib.dll
+C:\Users\UncleCarter\source\repos\PX_WEL_BackEnd_Demo\PX_WEL_BE_Lib\obj\Debug\net5.0\PX_WEL_BE_Lib.pdb
